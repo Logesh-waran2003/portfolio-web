@@ -99,7 +99,7 @@ export default function Home() {
         {/* Call to Action for Recruiters */}
         <div className="mt-12 flex flex-col sm:flex-row gap-4">
           <Link 
-            href="https://drive.google.com/file/d/your-resume-file-id/view?usp=sharing" 
+            href="https://drive.google.com/file/d/1uRa__WN_7oMACb_M-Nh10dSbTDbe_N0d/view?usp=sharing" 
             target="_blank"
             rel="noopener noreferrer"
             className={`flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors ${
@@ -167,6 +167,24 @@ export default function Home() {
               
               {/* Linux */}
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" width="40" alt="linux" title="Linux" />
+              
+              {/* Redux */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" height="40" width="40" alt="redux" title="Redux" />
+              
+              {/* Tailwind CSS */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" height="40" width="40" alt="tailwindcss" title="Tailwind CSS" />
+              
+              {/* MongoDB */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" width="40" alt="mongodb" title="MongoDB" />
+              
+              {/* Redis */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" width="40" alt="redis" title="Redis" />
+              
+              {/* VS Code */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" width="40" alt="vscode" title="VS Code" />
+              
+              {/* Bash */}
+              <img src="https://cdn.simpleicons.org/gnubash/4EAA25" height="40" width="40" alt="bash" title="Bash" />
             </div>
           </div>
         </div>
