@@ -1,15 +1,28 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
-import ThemeWrapper from '@/components/ThemeWrapper';
-import { ThemeProvider } from '../context/ThemeContext';
+import type { Metadata } from 'next';
+import { GeistSans } from 'geist/font/sans';
 import Navigation from '@/components/Navigation';
-
-const inter = Inter({ subsets: ['latin'] });
+import { ThemeProvider } from '@/context/ThemeContext';
 
 export const metadata: Metadata = {
-  title: 'Logeshwaran Portfolio',
-  description: 'Personal portfolio showcasing work and projects',
+  title: 'Logeshwaran T S | Full Stack Developer',
+  description: 'Full Stack Developer specializing in React, Next.js, AWS, and cloud infrastructure. View my projects and experience.',
+  keywords: 'full stack developer, react, next.js, aws, cloud infrastructure, portfolio, logeshwaran',
+  authors: [{ name: 'Logeshwaran T S' }],
+  openGraph: {
+    title: 'Logeshwaran T S | Full Stack Developer',
+    description: 'Full Stack Developer specializing in React, Next.js, AWS, and cloud infrastructure',
+    url: 'https://logeshwaran.dev',
+    siteName: 'Logeshwaran T S Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Logeshwaran T S | Full Stack Developer',
+    description: 'Full Stack Developer specializing in React, Next.js, AWS, and cloud infrastructure',
+    creator: '@logeshwaran_ts',
+  },
 };
 
 export default function RootLayout({
@@ -19,12 +32,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className}`}>
+      <body className={GeistSans.className}>
         <ThemeProvider>
-          <ThemeWrapper>
-            <Navigation />
-            {children}
-          </ThemeWrapper>
+          <Navigation />
+          {children}
         </ThemeProvider>
       </body>
     </html>
