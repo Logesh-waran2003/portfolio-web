@@ -11,5 +11,5 @@ export default function ThemeWrapper({
 
   if (!theme) return null; // Prevent rendering until theme is set
 
-  return <div className={theme}>{children}</div>;
+  return <div className={`${theme} min-h-screen`}>{children}</div>;
 }

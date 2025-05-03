@@ -17,22 +17,22 @@ export default function ProjectDetail() {
   
   if (!project) {
     return (
-      <main className='flex flex-col items-start min-h-screen px-6 py-12 md:p-24 lg:p-48 transition-all'>
-        <h1 className='text-2xl font-bold tracking-tight'>Project not found</h1>
+      <main className='flex flex-col items-start min-h-screen px-6 py-12 md:p-24 lg:p-36 transition-all'>
+        <h1 className='text-2xl font-bold tracking-tight'>project not found</h1>
         <p className={`mt-2 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
-          The project you&apos;re looking for doesn&apos;t exist.
+          the project you&apos;re looking for doesn&apos;t exist.
         </p>
         <Link href='/works' className='mt-6 flex items-center text-blue-600 hover:underline'>
-          <FiArrowLeft className="mr-2" /> Back to all projects
+          <FiArrowLeft className="mr-2" /> back to all projects
         </Link>
       </main>
     );
   }
 
   return (
-    <main className='flex flex-col items-start min-h-screen px-6 py-12 md:p-24 lg:p-48 transition-all'>
+    <main className='flex flex-col items-start min-h-screen px-6 py-12 md:p-24 lg:p-36 transition-all'>
       <Link href='/works' className='flex items-center text-blue-600 hover:underline mb-6'>
-        <FiArrowLeft className="mr-2" /> Back to all projects
+        <FiArrowLeft className="mr-2" /> back to all projects
       </Link>
       
       <div className="w-full">
@@ -49,7 +49,7 @@ export default function ProjectDetail() {
                   theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
                 } hover:underline`}
               >
-                <FiGithub className="mr-1" /> Source
+                <FiGithub className="mr-1" /> source
               </Link>
             )}
             
@@ -62,7 +62,7 @@ export default function ProjectDetail() {
                   theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
                 } hover:underline`}
               >
-                <FiExternalLink className="mr-1" /> Demo
+                <FiExternalLink className="mr-1" /> demo
               </Link>
             )}
           </div>
@@ -78,7 +78,7 @@ export default function ProjectDetail() {
               {project.role} at {project.companyName} • {project.year}
             </p>
           ) : (
-            <p>Personal Project • {project.year}</p>
+            <p>personal project • {project.year}</p>
           )}
         </div>
         
@@ -86,7 +86,7 @@ export default function ProjectDetail() {
           {project.technologies.map((tech, index) => (
             <span 
               key={index}
-              className={`px-3 py-1 text-sm rounded-full ${
+              className={`px-3 py-1 text-sm rounded-md ${
                 theme === 'dark' 
                   ? 'bg-gray-800 text-gray-300' 
                   : 'bg-gray-200 text-gray-700'
@@ -111,7 +111,7 @@ export default function ProjectDetail() {
                 : 'text-gray-600 hover:text-black'
             }`}
           >
-            Overview
+            overview
           </button>
           <button
             onClick={() => setActiveTab('details')}
@@ -125,7 +125,7 @@ export default function ProjectDetail() {
                 : 'text-gray-600 hover:text-black'
             }`}
           >
-            Details
+            details
           </button>
           {project.screenshots && project.screenshots.length > 0 && (
             <button
@@ -140,7 +140,7 @@ export default function ProjectDetail() {
                   : 'text-gray-600 hover:text-black'
               }`}
             >
-              <FiImage className="mr-2" /> Screenshots
+              <FiImage className="mr-2" /> screenshots
             </button>
           )}
         </div>
@@ -181,10 +181,10 @@ export default function ProjectDetail() {
                     theme === 'dark' ? 'bg-gray-800' : 'bg-gray-200'
                   }`}>
                     <p className="text-center px-4">
-                      Screenshot placeholder: {screenshot.split('/').pop()}
+                      screenshot placeholder: {screenshot.split('/').pop()}
                       <br />
                       <span className="text-xs">
-                        (Add actual images to the public directory)
+                        (add actual images to the public directory)
                       </span>
                     </p>
                   </div>
@@ -201,9 +201,9 @@ export default function ProjectDetail() {
 function ProfessionalOverview({ project, theme }: { project: ProfessionalProject, theme: string | null }) {
   return (
     <div className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}>
-      <h2 className="text-xl font-semibold mb-4">Project Overview</h2>
+      <h2 className="text-xl font-semibold mb-4">project overview</h2>
       
-      <h3 className="text-lg font-medium mt-6 mb-2">Impact & Achievements</h3>
+      <h3 className="text-lg font-medium mt-6 mb-2">impact & achievements</h3>
       <ul className="list-disc pl-5 space-y-3">
         {project.impact.map((item, index) => (
           <li key={index}>{item}</li>
@@ -218,24 +218,24 @@ function ProfessionalOverview({ project, theme }: { project: ProfessionalProject
 function PersonalOverview({ project, theme }: { project: PersonalProject, theme: string | null }) {
   return (
     <div className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}>
-      <h2 className="text-xl font-semibold mb-4">Project Overview</h2>
+      <h2 className="text-xl font-semibold mb-4">project overview</h2>
       
       {project.ideation && (
         <>
-          <h3 className="text-lg font-medium mt-6 mb-2">Ideation</h3>
+          <h3 className="text-lg font-medium mt-6 mb-2">ideation</h3>
           <p className="mb-4">{project.ideation}</p>
         </>
       )}
       
-      <h3 className="text-lg font-medium mt-6 mb-2">The Problem</h3>
+      <h3 className="text-lg font-medium mt-6 mb-2">the problem</h3>
       <p className="mb-4">{project.problem}</p>
       
-      <h3 className="text-lg font-medium mt-6 mb-2">My Approach</h3>
+      <h3 className="text-lg font-medium mt-6 mb-2">my approach</h3>
       <p className="mb-4">{project.approach}</p>
       
       {project.progress && (
         <>
-          <h3 className="text-lg font-medium mt-6 mb-2">Current Status</h3>
+          <h3 className="text-lg font-medium mt-6 mb-2">current status</h3>
           <p className="mb-4">{project.progress}</p>
         </>
       )}
@@ -243,7 +243,7 @@ function PersonalOverview({ project, theme }: { project: PersonalProject, theme:
       {project.futureRoadmap && project.futureRoadmap.length > 0 && (
         <>
           <h3 className="text-lg font-medium mt-6 mb-2 flex items-center">
-            <FiMap className="mr-2" /> Future Roadmap
+            <FiMap className="mr-2" /> future roadmap
           </h3>
           <ul className="list-disc pl-5 space-y-2">
             {project.futureRoadmap.map((item, index) => (
@@ -259,14 +259,14 @@ function PersonalOverview({ project, theme }: { project: PersonalProject, theme:
 function ProfessionalDetails({ project, theme }: { project: ProfessionalProject, theme: string | null }) {
   return (
     <div className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}>
-      <h2 className="text-xl font-semibold mb-4">Technical Details</h2>
+      <h2 className="text-xl font-semibold mb-4">technical details</h2>
       
-      <h3 className="text-lg font-medium mt-6 mb-2">Technologies Used</h3>
+      <h3 className="text-lg font-medium mt-6 mb-2">technologies used</h3>
       <div className="flex flex-wrap gap-2 mb-6">
         {project.technologies.map((tech, index) => (
           <span 
             key={index}
-            className={`px-3 py-1 text-sm rounded-full ${
+            className={`px-3 py-1 text-sm rounded-md ${
               theme === 'dark' 
                 ? 'bg-gray-800 text-gray-300' 
                 : 'bg-gray-200 text-gray-700'
@@ -277,8 +277,8 @@ function ProfessionalDetails({ project, theme }: { project: ProfessionalProject,
         ))}
       </div>
       
-      <h3 className="text-lg font-medium mt-6 mb-2">Role & Responsibilities</h3>
-      <p className="mb-4">As {project.role} at {project.companyName}, I was responsible for:</p>
+      <h3 className="text-lg font-medium mt-6 mb-2">role & responsibilities</h3>
+      <p className="mb-4">as {project.role} at {project.companyName}, i was responsible for:</p>
       <ul className="list-disc pl-5 space-y-2">
         {project.impact.map((item, index) => {
           // Extract the responsibility part from the impact statement
@@ -293,14 +293,14 @@ function ProfessionalDetails({ project, theme }: { project: ProfessionalProject,
 function PersonalDetails({ project, theme }: { project: PersonalProject, theme: string | null }) {
   return (
     <div className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}>
-      <h2 className="text-xl font-semibold mb-4">Technical Details</h2>
+      <h2 className="text-xl font-semibold mb-4">technical details</h2>
       
-      <h3 className="text-lg font-medium mt-6 mb-2">Technologies Used</h3>
+      <h3 className="text-lg font-medium mt-6 mb-2">technologies used</h3>
       <div className="flex flex-wrap gap-2 mb-6">
         {project.technologies.map((tech, index) => (
           <span 
             key={index}
-            className={`px-3 py-1 text-sm rounded-full ${
+            className={`px-3 py-1 text-sm rounded-md ${
               theme === 'dark' 
                 ? 'bg-gray-800 text-gray-300' 
                 : 'bg-gray-200 text-gray-700'
@@ -311,10 +311,10 @@ function PersonalDetails({ project, theme }: { project: PersonalProject, theme: 
         ))}
       </div>
       
-      <h3 className="text-lg font-medium mt-6 mb-2">Thought Process</h3>
+      <h3 className="text-lg font-medium mt-6 mb-2">thought process</h3>
       <p className="mb-6">{project.thought}</p>
       
-      <h3 className="text-lg font-medium mt-6 mb-2">Implementation Approach</h3>
+      <h3 className="text-lg font-medium mt-6 mb-2">implementation approach</h3>
       <p className="mb-4">{project.approach}</p>
     </div>
   );

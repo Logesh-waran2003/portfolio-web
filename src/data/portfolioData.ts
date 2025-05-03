@@ -229,7 +229,5 @@ export const about = {
     "Open-source contributor who successfully completed Hacktoberfest 2024 with 4+ accepted Pull Requests",
     "Awarded Best Employee for exceptional performance",
     "AWS Certified Solutions Architect – Associate certification"
-  ],
-  philosophy: "My approach to development centers on understanding the core problem before writing a single line of code. I value maintainable solutions that solve specific needs without unnecessary complexity.",
-  interests: ["Cloud Infrastructure", "Performance Optimization", "User-centered Development", "Open Source Contribution"]
+  ]
 };

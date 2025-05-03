@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from '@/context/ThemeContext';
+import ThemeWrapper from '@/components/ThemeWrapper';
 
 export const metadata: Metadata = {
   title: 'Logeshwaran T S | Full Stack Developer',
@@ -33,8 +34,10 @@ export default function RootLayout({
     <html lang='en'>
       <body className="font-sans">
         <ThemeProvider>
-          <Navigation />
-          {children}
+          <ThemeWrapper>
+            <Navigation />
+            {children}
+          </ThemeWrapper>
         </ThemeProvider>
       </body>
     </html>

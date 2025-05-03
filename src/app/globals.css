@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 :root {
+  /* Base variables for both themes */
+  --background: #f5f3e7;
+  --foreground: #222;
+  
+  /* Theme-specific variables */
   --background-light: #f5f3e7;
-  --text-light: #333;
+  --text-light: #222;
   --background-dark: #000;
   --text-dark: #fff;
 }
@@ -20,14 +25,20 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.6;
 }
 
 .light {
+  --background: var(--background-light);
+  --foreground: var(--text-light);
   background-color: var(--background-light);
   color: var(--text-light);
 }
 
 .dark {
+  --background: var(--background-dark);
+  --foreground: var(--text-dark);
   background-color: var(--background-dark);
   color: var(--text-dark);
 }

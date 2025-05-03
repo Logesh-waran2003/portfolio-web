@@ -32,14 +32,14 @@ export default function Works() {
   };
 
   return (
-    <main className='flex flex-col items-start min-h-screen px-6 py-12 md:p-24 lg:p-48 transition-all'>
+    <main className='flex flex-col items-start min-h-screen px-6 py-12 md:p-24 lg:p-36 transition-all'>
       <h1 className='text-2xl font-bold tracking-tight'>work</h1>
       <p
         className={`mt-2 ${
           theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
         }`}
       >
-        A curated list of projects with the thinking behind each one.
+        a curated list of projects with the thinking behind each one.
       </p>
 
       {/* Tabs */}
@@ -57,7 +57,7 @@ export default function Works() {
           }`}
         >
           <FiBriefcase className="mr-2" />
-          Professional
+          professional
         </button>
         <button
           onClick={() => setActiveTab('personal')}
@@ -72,7 +72,7 @@ export default function Works() {
           }`}
         >
           <FiUser className="mr-2" />
-          Personal
+          personal
         </button>
       </div>
 
@@ -93,7 +93,7 @@ export default function Works() {
             ))
           ) : (
             <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>
-              No professional projects to display.
+              no professional projects to display.
             </p>
           )
         ) : personalProjects.length > 0 ? (
@@ -110,14 +110,14 @@ export default function Works() {
           ))
         ) : (
           <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>
-            No personal projects to display.
+            no personal projects to display.
           </p>
         )}
       </div>
 
       {/* Go Back Link */}
-      <Link href='/' className='mt-10 font-bold text-blue-600 transition-all hover:underline'>
-        Go Back Home
+      <Link href='/' className='mt-8 font-medium text-blue-600 transition-all hover:underline'>
+        go back home
       </Link>
     </main>
   );
@@ -242,7 +242,7 @@ function ProfessionalProjectCard({
           aria-expanded={isExpanded}
         >
           <span className="mr-1">
-            {isExpanded ? 'Hide details' : 'Show details'}
+            {isExpanded ? 'hide details' : 'show details'}
           </span>
           {isExpanded ? <FiChevronUp /> : <FiChevronDown />}
         </button>
@@ -256,7 +256,7 @@ function ProfessionalProjectCard({
           <h3 className={`font-medium mb-2 ${
             theme === 'dark' ? 'text-gray-300' : 'text-gray-800'
           }`}>
-            Impact & Achievements
+            impact & achievements
           </h3>
           
           <ul className="list-disc pl-5 space-y-2">
@@ -269,7 +269,7 @@ function ProfessionalProjectCard({
             {project.technologies.map((tech, index) => (
               <span 
                 key={index}
-                className={`px-2 py-1 text-xs rounded-full ${
+                className={`px-2 py-1 text-xs rounded-md ${
                   theme === 'dark' 
                     ? 'bg-gray-800 text-gray-300' 
                     : 'bg-gray-200 text-gray-700'
@@ -291,7 +291,7 @@ function ProfessionalProjectCard({
                   theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
                 } hover:underline`}
               >
-                <FiGithub /> View Source
+                <FiGithub /> view source
               </Link>
             )}
             
@@ -304,7 +304,7 @@ function ProfessionalProjectCard({
                   theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
                 } hover:underline`}
               >
-                <FiExternalLink /> View Live Demo
+                <FiExternalLink /> view live demo
               </Link>
             )}
             
@@ -315,7 +315,7 @@ function ProfessionalProjectCard({
                   theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
                 } hover:underline`}
               >
-                <FiImage /> {showScreenshots ? 'Hide Screenshots' : 'View Screenshots'}
+                <FiImage /> {showScreenshots ? 'hide screenshots' : 'view screenshots'}
               </button>
             )}
             
@@ -325,7 +325,7 @@ function ProfessionalProjectCard({
                 theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
               } hover:underline`}
             >
-              View Full Project Details
+              view full project details
             </Link>
           </div>
           
@@ -344,10 +344,10 @@ function ProfessionalProjectCard({
                     theme === 'dark' ? 'bg-gray-800' : 'bg-gray-200'
                   }`}>
                     <p className="text-center px-4">
-                      Screenshot placeholder: {screenshot.split('/').pop()}
+                      screenshot placeholder: {screenshot.split('/').pop()}
                       <br />
                       <span className="text-xs">
-                        (Add actual images to the public directory)
+                        (add actual images to the public directory)
                       </span>
                     </p>
                   </div>
@@ -360,7 +360,6 @@ function ProfessionalProjectCard({
     </div>
   );
 }
-
 function PersonalProjectCard({ 
   project, 
   theme, 
@@ -445,7 +444,7 @@ function PersonalProjectCard({
                 <p className={`text-xs ${
                   theme === 'dark' ? 'text-gray-500' : 'text-gray-600'
                 }`}>
-                  Status: {project.progress}
+                  status: {project.progress}
                 </p>
                 <span className={`mx-2 text-xs ${
                   theme === 'dark' ? 'text-gray-600' : 'text-gray-500'
@@ -469,7 +468,7 @@ function PersonalProjectCard({
           aria-expanded={isExpanded}
         >
           <span className="mr-1">
-            {isExpanded ? 'Hide details' : 'Show details'}
+            {isExpanded ? 'hide details' : 'show details'}
           </span>
           {isExpanded ? <FiChevronUp /> : <FiChevronDown />}
         </button>
@@ -483,7 +482,7 @@ function PersonalProjectCard({
           <h3 className={`font-medium mb-2 ${
             theme === 'dark' ? 'text-gray-300' : 'text-gray-800'
           }`}>
-            Behind the project
+            behind the project
           </h3>
           
           <div className="mb-3">
@@ -491,24 +490,24 @@ function PersonalProjectCard({
               <>
                 <h4 className={`font-medium ${
                   theme === 'dark' ? 'text-gray-400' : 'text-gray-700'
-                }`}>Ideation</h4>
+                }`}>ideation</h4>
                 <p className="mb-2">{project.ideation}</p>
               </>
             )}
             
             <h4 className={`font-medium ${
               theme === 'dark' ? 'text-gray-400' : 'text-gray-700'
-            }`}>The Problem</h4>
+            }`}>the problem</h4>
             <p className="mb-2">{project.problem}</p>
             
             <h4 className={`font-medium ${
               theme === 'dark' ? 'text-gray-400' : 'text-gray-700'
-            }`}>My Approach</h4>
+            }`}>my approach</h4>
             <p className="mb-2">{project.approach}</p>
             
             <h4 className={`font-medium ${
               theme === 'dark' ? 'text-gray-400' : 'text-gray-700'
-            }`}>Thought Process</h4>
+            }`}>thought process</h4>
             <p>{project.thought}</p>
           </div>
           
@@ -516,7 +515,7 @@ function PersonalProjectCard({
             {project.technologies.map((tech, index) => (
               <span 
                 key={index}
-                className={`px-2 py-1 text-xs rounded-full ${
+                className={`px-2 py-1 text-xs rounded-md ${
                   theme === 'dark' 
                     ? 'bg-gray-800 text-gray-300' 
                     : 'bg-gray-200 text-gray-700'
@@ -538,7 +537,7 @@ function PersonalProjectCard({
                   theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
                 } hover:underline`}
               >
-                <FiGithub /> View Source
+                <FiGithub /> view source
               </Link>
             )}
             
@@ -551,7 +550,7 @@ function PersonalProjectCard({
                   theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
                 } hover:underline`}
               >
-                <FiExternalLink /> View Live Demo
+                <FiExternalLink /> view live demo
               </Link>
             )}
             
@@ -562,7 +561,7 @@ function PersonalProjectCard({
                   theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
                 } hover:underline`}
               >
-                <FiImage /> {showScreenshots ? 'Hide Screenshots' : 'View Screenshots'}
+                <FiImage /> {showScreenshots ? 'hide screenshots' : 'view screenshots'}
               </button>
             )}
             
@@ -571,7 +570,7 @@ function PersonalProjectCard({
                 <h4 className={`font-medium mt-4 mb-2 flex items-center ${
                   theme === 'dark' ? 'text-gray-300' : 'text-gray-800'
                 }`}>
-                  <FiMap className="mr-2" /> Future Roadmap
+                  <FiMap className="mr-2" /> future roadmap
                 </h4>
                 <ul className="list-disc pl-5 space-y-1">
                   {project.futureRoadmap.map((item, index) => (
@@ -587,7 +586,7 @@ function PersonalProjectCard({
                 theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
               } hover:underline`}
             >
-              View Full Project Details
+              view full project details
             </Link>
           </div>
           
@@ -606,10 +605,10 @@ function PersonalProjectCard({
                     theme === 'dark' ? 'bg-gray-800' : 'bg-gray-200'
                   }`}>
                     <p className="text-center px-4">
-                      Screenshot placeholder: {screenshot.split('/').pop()}
+                      screenshot placeholder: {screenshot.split('/').pop()}
                       <br />
                       <span className="text-xs">
-                        (Add actual images to the public directory)
+                        (add actual images to the public directory)
                       </span>
                     </p>
                   </div>
