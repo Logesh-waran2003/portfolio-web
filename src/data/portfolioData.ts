@@ -221,7 +221,7 @@ export const about = {
       name: "AWS Certified Solutions Architect – Associate",
       issuer: "Amazon Web Services",
       date: "2024",
-      url: "https://www.credly.com/badges/your-badge-id" // Update with your actual credential URL
+      url: "https://www.credly.com/badges/7e0b3907-6467-4dc4-b108-86601677f01d/public_url"
     }
   ],
   achievements: [
