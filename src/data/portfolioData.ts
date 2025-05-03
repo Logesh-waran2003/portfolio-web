@@ -10,7 +10,7 @@ export const personalInfo = {
   location: "Chennai, India",
   socialLinks: {
     github: "https://github.com/Logesh-waran2003",
-    twitter: "https://twitter.com/logeshwaran_ts", // Update if you have Twitter
+    twitter: "https://x.com/Logesh236",
     linkedin: "https://linkedin.com/in/logeshwaran-t-s",
   }
 };
