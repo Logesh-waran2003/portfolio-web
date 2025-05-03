@@ -154,13 +154,13 @@ export default function Home() {
               <img src="https://skillicons.dev/icons?i=prisma" height="40" width="40" alt="prisma" title="Prisma" />
               
               {/* PostgreSQL */}
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" width="40" alt="postgresql" title="PostgreSQL" />
+              <img src="https://skillicons.dev/icons?i=postgres" height="40" width="40" alt="postgresql" title="PostgreSQL" />
               
               {/* Docker */}
               <img src="https://cdn.simpleicons.org/docker/2496ED" height="40" width="40" alt="docker" title="Docker" />
               
               {/* AWS */}
-              <img src="https://cdn.simpleicons.org/amazonwebservices/FF9900" height="40" width="40" alt="aws" title="AWS" />
+              <img src="https://skillicons.dev/icons?i=aws" height="40" width="40" alt="aws" title="AWS" />
               
               {/* Git */}
               <img src="https://cdn.simpleicons.org/git/F05032" height="40" width="40" alt="git" title="Git" />
@@ -172,7 +172,7 @@ export default function Home() {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" height="40" width="40" alt="redux" title="Redux" />
               
               {/* Tailwind CSS */}
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" height="40" width="40" alt="tailwindcss" title="Tailwind CSS" />
+              <img src="https://skillicons.dev/icons?i=tailwind" height="40" width="40" alt="tailwindcss" title="Tailwind CSS" />
               
               {/* MongoDB */}
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" width="40" alt="mongodb" title="MongoDB" />
@@ -185,6 +185,15 @@ export default function Home() {
               
               {/* Bash */}
               <img src="https://cdn.simpleicons.org/gnubash/4EAA25" height="40" width="40" alt="bash" title="Bash" />
+              
+              {/* Neovim */}
+              <img src="https://skillicons.dev/icons?i=neovim" height="40" width="40" alt="neovim" title="Neovim" />
+              
+              {/* .NET */}
+              <img src="https://skillicons.dev/icons?i=dotnet" height="40" width="40" alt="dotnet" title=".NET" />
+              
+              {/* C# */}
+              <img src="https://skillicons.dev/icons?i=cs" height="40" width="40" alt="csharp" title="C#" />
             </div>
           </div>
         </div>
