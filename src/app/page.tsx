@@ -130,6 +130,7 @@ export default function Home() {
           }`}>
             <div className="flex flex-wrap gap-4 items-center">
               {/* Frontend */}
+              {/* eslint-disable @next/next/no-img-element */}
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="40" alt="javascript" title="JavaScript" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="40" alt="typescript" title="TypeScript" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="40" alt="html5" title="HTML5" />
@@ -160,6 +161,7 @@ export default function Home() {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" width="40" alt="vscode" title="VS Code" />
               <img src="https://skillicons.dev/icons?i=neovim" height="40" width="40" alt="neovim" title="Neovim" />
               <img src="https://cdn.simpleicons.org/gnubash/4EAA25" height="40" width="40" alt="bash" title="Bash" />
+              {/* eslint-enable @next/next/no-img-element */}
             </div>
           </div>
         </div>
@@ -172,7 +174,7 @@ export default function Home() {
             I thrive in fast-paced environments where I can wear multiple hats and contribute across the stack. My experience with AWS and cloud infrastructure enables me to build scalable solutions from day one.
           </p>
           <p className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}>
-            I'm passionate about creating efficient, maintainable code that solves real business problems. My approach focuses on delivering value quickly while building a solid foundation for future growth.
+            I&apos;m passionate about creating efficient, maintainable code that solves real business problems. My approach focuses on delivering value quickly while building a solid foundation for future growth.
           </p>
         </div>
       </section>
