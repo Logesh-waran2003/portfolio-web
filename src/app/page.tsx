@@ -131,80 +131,36 @@ export default function Home() {
           }`}>
             <div className="flex flex-wrap gap-4 items-center">
               {/* Frontend */}
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" fill alt="javascript" title="JavaScript" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" fill alt="typescript" title="TypeScript" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" fill alt="html5" title="HTML5" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" fill alt="css3" title="CSS3" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://skillicons.dev/icons?i=tailwind" fill alt="tailwindcss" title="Tailwind CSS" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" fill alt="react" title="React" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://skillicons.dev/icons?i=nextjs" fill alt="nextjs" title="Next.js" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" fill alt="redux" title="Redux" />
-              </div>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="40" alt="javascript" title="JavaScript" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="40" alt="typescript" title="TypeScript" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="40" alt="html5" title="HTML5" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="40" alt="css3" title="CSS3" />
+              <img src="https://skillicons.dev/icons?i=tailwind" height="40" width="40" alt="tailwindcss" title="Tailwind CSS" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="40" alt="react" title="React" />
+              <img src="https://skillicons.dev/icons?i=nextjs" height="40" width="40" alt="nextjs" title="Next.js" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" height="40" width="40" alt="redux" title="Redux" />
               
               {/* Backend */}
-              <div className="relative h-10 w-10">
-                <Image src="https://skillicons.dev/icons?i=nodejs" fill alt="nodejs" title="Node.js" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://skillicons.dev/icons?i=dotnet" fill alt="dotnet" title=".NET" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://skillicons.dev/icons?i=cs" fill alt="csharp" title="C#" />
-              </div>
+              <img src="https://skillicons.dev/icons?i=nodejs" height="40" width="40" alt="nodejs" title="Node.js" />
+              <img src="https://skillicons.dev/icons?i=dotnet" height="40" width="40" alt="dotnet" title=".NET" />
+              <img src="https://skillicons.dev/icons?i=cs" height="40" width="40" alt="csharp" title="C#" />
               
               {/* Database */}
-              <div className="relative h-10 w-10">
-                <Image src="https://skillicons.dev/icons?i=postgres" fill alt="postgresql" title="PostgreSQL" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" fill alt="mongodb" title="MongoDB" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" fill alt="redis" title="Redis" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://skillicons.dev/icons?i=prisma" fill alt="prisma" title="Prisma" />
-              </div>
+              <img src="https://skillicons.dev/icons?i=postgres" height="40" width="40" alt="postgresql" title="PostgreSQL" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" width="40" alt="mongodb" title="MongoDB" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" width="40" alt="redis" title="Redis" />
+              <img src="https://skillicons.dev/icons?i=prisma" height="40" width="40" alt="prisma" title="Prisma" />
               
               {/* DevOps & Cloud */}
-              <div className="relative h-10 w-10">
-                <Image src="https://skillicons.dev/icons?i=aws" fill alt="aws" title="AWS" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.simpleicons.org/docker/2496ED" fill alt="docker" title="Docker" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.simpleicons.org/git/F05032" fill alt="git" title="Git" />
-              </div>
+              <img src="https://skillicons.dev/icons?i=aws" height="40" width="40" alt="aws" title="AWS" />
+              <img src="https://cdn.simpleicons.org/docker/2496ED" height="40" width="40" alt="docker" title="Docker" />
+              <img src="https://cdn.simpleicons.org/git/F05032" height="40" width="40" alt="git" title="Git" />
               
               {/* Tools & Environment */}
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" fill alt="linux" title="Linux" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" fill alt="vscode" title="VS Code" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://skillicons.dev/icons?i=neovim" fill alt="neovim" title="Neovim" />
-              </div>
-              <div className="relative h-10 w-10">
-                <Image src="https://cdn.simpleicons.org/gnubash/4EAA25" fill alt="bash" title="Bash" />
-              </div>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" width="40" alt="linux" title="Linux" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" width="40" alt="vscode" title="VS Code" />
+              <img src="https://skillicons.dev/icons?i=neovim" height="40" width="40" alt="neovim" title="Neovim" />
+              <img src="https://cdn.simpleicons.org/gnubash/4EAA25" height="40" width="40" alt="bash" title="Bash" />
             </div>
           </div>
         </div>
