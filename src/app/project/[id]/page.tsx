@@ -20,7 +20,7 @@ export default function ProjectDetail() {
       <main className='flex flex-col items-start min-h-screen px-6 py-12 md:p-24 lg:p-48 transition-all'>
         <h1 className='text-2xl font-bold tracking-tight'>Project not found</h1>
         <p className={`mt-2 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
-          The project you're looking for doesn't exist.
+          The project you&apos;re looking for doesn&apos;t exist.
         </p>
         <Link href='/works' className='mt-6 flex items-center text-blue-600 hover:underline'>
           <FiArrowLeft className="mr-2" /> Back to all projects

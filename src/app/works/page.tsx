@@ -2,7 +2,6 @@
 
 import { useTheme } from '@/context/ThemeContext';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
 import { FiExternalLink, FiGithub, FiChevronDown, FiChevronUp, FiBriefcase, FiUser, FiImage, FiMap } from 'react-icons/fi';
 import { professionalProjects, personalProjects, ProfessionalProject, PersonalProject } from '@/data/portfolioData';
