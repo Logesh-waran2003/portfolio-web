@@ -1,6 +1,5 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { GeistSans } from 'geist/font/sans';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from '@/context/ThemeContext';
 
@@ -32,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={GeistSans.className}>
+      <body className="font-sans">
         <ThemeProvider>
           <Navigation />
           {children}

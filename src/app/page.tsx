@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FaXTwitter } from 'react-icons/fa6';
 import { LuGithub } from 'react-icons/lu';
-import { MdMailOutline, MdDownload, MdRocketLaunch } from 'react-icons/md';
+import { MdMailOutline, MdOutlineDescription } from 'react-icons/md';
 import { FaLinkedin, FaAws } from 'react-icons/fa';
 import { useTheme } from '../context/ThemeContext';
-import { personalInfo, skills } from '@/data/portfolioData';
+import { personalInfo } from '@/data/portfolioData';
 
 export default function Home() {
   const [showIcons, setShowIcons] = useState(false);
@@ -99,15 +99,16 @@ export default function Home() {
         {/* Call to Action for Recruiters */}
         <div className="mt-12 flex flex-col sm:flex-row gap-4">
           <Link 
-            href="/resume.pdf" 
+            href="https://drive.google.com/file/d/your-resume-file-id/view?usp=sharing" 
             target="_blank"
+            rel="noopener noreferrer"
             className={`flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors ${
               theme === 'dark' 
                 ? 'bg-blue-600 hover:bg-blue-700 text-white' 
                 : 'bg-blue-500 hover:bg-blue-600 text-white'
             }`}
           >
-            <MdDownload className="mr-2" /> Download Resume
+            <MdOutlineDescription className="mr-2" /> View Resume
           </Link>
           <Link 
             href="/works" 
@@ -121,58 +122,59 @@ export default function Home() {
           </Link>
         </div>
         
-        {/* Tech Stack Visualization */}
+        {/* Tech Stack Icons */}
         <div className="mt-16">
           <h2 className="text-xl font-bold mb-4">Tech Stack</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {skills.map((category, index) => (
-              <div 
-                key={index}
-                className={`p-4 rounded-lg ${
-                  theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'
-                }`}
-              >
-                <h3 className="font-medium mb-2">{category.category}</h3>
-                <div className="flex flex-wrap gap-2">
-                  {category.items.slice(0, 3).map((skill, skillIndex) => (
-                    <span 
-                      key={skillIndex}
-                      className={`px-2 py-1 text-xs rounded-full ${
-                        theme === 'dark' 
-                          ? 'bg-gray-700 text-gray-300' 
-                          : 'bg-gray-200 text-gray-700'
-                      }`}
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                  {category.items.length > 3 && (
-                    <span 
-                      className={`px-2 py-1 text-xs rounded-full ${
-                        theme === 'dark' 
-                          ? 'bg-gray-700 text-gray-300' 
-                          : 'bg-gray-200 text-gray-700'
-                      }`}
-                    >
-                      +{category.items.length - 3} more
-                    </span>
-                  )}
-                </div>
-              </div>
-            ))}
+          <div className={`p-6 rounded-lg ${
+            theme === 'dark' ? 'bg-gray-800/50' : 'bg-gray-50'
+          }`}>
+            <div className="flex flex-wrap gap-4 items-center">
+              {/* JavaScript */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="40" alt="javascript" title="JavaScript" />
+              
+              {/* TypeScript */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="40" alt="typescript" title="TypeScript" />
+              
+              {/* HTML5 */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="40" alt="html5" title="HTML5" />
+              
+              {/* CSS3 */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="40" alt="css3" title="CSS3" />
+              
+              {/* React */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="40" alt="react" title="React" />
+              
+              {/* Next.js */}
+              <img src="https://skillicons.dev/icons?i=nextjs" height="40" width="40" alt="nextjs" title="Next.js" />
+              
+              {/* Node.js */}
+              <img src="https://skillicons.dev/icons?i=nodejs" height="40" width="40" alt="nodejs" title="Node.js" />
+              
+              {/* Prisma */}
+              <img src="https://skillicons.dev/icons?i=prisma" height="40" width="40" alt="prisma" title="Prisma" />
+              
+              {/* PostgreSQL */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" width="40" alt="postgresql" title="PostgreSQL" />
+              
+              {/* Docker */}
+              <img src="https://cdn.simpleicons.org/docker/2496ED" height="40" width="40" alt="docker" title="Docker" />
+              
+              {/* AWS */}
+              <img src="https://cdn.simpleicons.org/amazonwebservices/FF9900" height="40" width="40" alt="aws" title="AWS" />
+              
+              {/* Git */}
+              <img src="https://cdn.simpleicons.org/git/F05032" height="40" width="40" alt="git" title="Git" />
+              
+              {/* Linux */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" width="40" alt="linux" title="Linux" />
+            </div>
           </div>
         </div>
         
-        {/* Startup Interest Section */}
+        {/* Professional Philosophy Section (replacing explicit startup section) */}
         <div className={`mt-16 p-6 rounded-lg border ${
           theme === 'dark' ? 'bg-gray-800/50 border-gray-700' : 'bg-gray-50 border-gray-200'
         }`}>
-          <div className="flex items-center mb-4">
-            <MdRocketLaunch className={`text-2xl mr-2 ${
-              theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
-            }`} />
-            <h2 className="text-xl font-bold">Why I'm Great for Startups</h2>
-          </div>
           <p className={`mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
             I thrive in fast-paced environments where I can wear multiple hats and contribute across the stack. My experience with AWS and cloud infrastructure enables me to build scalable solutions from day one.
           </p>
