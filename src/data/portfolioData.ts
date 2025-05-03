@@ -80,7 +80,7 @@ export const professionalProjects: ProfessionalProject[] = [
     githubUrl: "https://github.com/Logesh-waran2003/e-auction", // Update with actual link when available
     demoUrl: null,
     technologies: ["Next.js", "PostgreSQL", "NextAuth", "Prisma ORM"],
-    year: "2023",
+    year: "2025",
     impact: [
       "Built with role-based access control, delivering client POC ahead of schedule",
       "Reduced dev time by 40% with NextAuth integration",
@@ -103,7 +103,7 @@ export const professionalProjects: ProfessionalProject[] = [
     githubUrl: null,
     demoUrl: null,
     technologies: ["SQL", "Stored Procedures", "React", "Node.js"],
-    year: "2023",
+    year: "2024",
     impact: [
       "Revamped SQL stored procedures for EMIS, reducing data processing latency by 50% for datasets exceeding 1M records",
       "Resolved 20+ high-priority UAT and Production bugs, ensuring system stability and seamless functionality",
@@ -149,7 +149,7 @@ export const personalProjects: PersonalProject[] = [
     githubUrl: "https://github.com/Logesh-waran2003/money-manager", // Update with actual link when available
     demoUrl: null,
     technologies: ["Next.js", "React Native", "PostgreSQL", "Regex Parsing"],
-    year: "2023",
+    year: "2025",
     problem: "I needed a way to track my finances across devices without manual data entry, while maintaining privacy and having offline access.",
     approach: "I built a system that automatically parses SMS notifications and UPI transactions, stores them locally first for offline access, and syncs to the cloud when connected.",
     thought: "Financial tracking apps often require too much manual input or don't respect privacy. I wanted to create something that would work for me with minimal interaction while giving me complete ownership of my data. The cross-platform approach ensures I can track finances anywhere, and the automation removes the friction that usually causes people to abandon financial tracking.",
@@ -220,13 +220,13 @@ export const about = {
     {
       name: "AWS Certified Solutions Architect – Associate",
       issuer: "Amazon Web Services",
-      date: "2023",
+      date: "2024",
       url: "https://www.credly.com/badges/your-badge-id" // Update with your actual credential URL
     }
   ],
   achievements: [
-    "1st place in the Samhita Hackathon 2023, organized by MIT Chennai",
-    "Open-source contributor who successfully completed Hacktoberfest 2023 with 4+ accepted Pull Requests",
+    "1st place in the Samhita Hackathon 2024, organized by MIT Chennai",
+    "Open-source contributor who successfully completed Hacktoberfest 2024 with 4+ accepted Pull Requests",
     "Awarded Best Employee for exceptional performance",
     "AWS Certified Solutions Architect – Associate certification"
   ],

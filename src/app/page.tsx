@@ -33,7 +33,7 @@ export default function Home() {
             <div>
               <p className="font-medium">AWS Certified Solutions Architect</p>
               <p className={`text-xs ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
-                Associate Level • Verified 2023
+                Associate Level • Verified 2024
               </p>
             </div>
           </div>
